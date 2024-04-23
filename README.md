@@ -9,7 +9,7 @@ The Members Data Converter project aims to streamline the process of converting 
 - Text editor or integrated development environment (IDE)
 
 ## Usage
-To use the Membership Data Converter, follow these steps:
+To use the Members Data Converter, follow these steps:
 
 - Clone the project repository to your local machine.
 - Ensure that you have Java installed on your system.
@@ -19,7 +19,7 @@ To use the Membership Data Converter, follow these steps:
 
 
 # SQL Queries
-The project also includes SQL queries for a provided database schema. These queries were created to address specific questions related to the given schema. Details of the schema and the questions can be found in the dbtest-queries.sql file.
+The project also includes SQL queries for a provided database schema. These queries were created to address specific questions related to the given schema. Details of the schema and the questions can be found in the **dbtest-queries.sql** file.
 
 ## Contact
 For any questions or inquiries, please contact Mohit Chaudhari at chaudharimohit1410@gmail.com
