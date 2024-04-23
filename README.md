@@ -16,3 +16,10 @@ To use the Membership Data Converter, follow these steps:
 - Compile the Java source files.
 - Run the Main class to execute the conversion process.
 - Once program is executed, check the root directory for the generated CSV files.
+
+
+# SQL Queries
+The project also includes SQL queries for a provided database schema. These queries were created to address specific questions related to the given schema. Details of the schema and the questions can be found in the dbtest-queries.sql file.
+
+## Contact
+For any questions or inquiries, please contact Mohit Chaudhari at chaudharimohit1410@gmail.com
