@@ -68,7 +68,13 @@ public class Member {
 
 	public String toCSVString( ) {
 		//TODO implement this
-		return null;
+		
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append(id).append(", ").append(firstName).append(", ").append(lastName).append(", ")
+		.append(address).append(", ").append(city).append(", ").append(zip);
+		
+		return sb.toString();
 	}
 
 }

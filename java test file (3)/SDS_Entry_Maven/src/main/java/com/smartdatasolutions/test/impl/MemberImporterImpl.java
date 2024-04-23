@@ -1,12 +1,13 @@
 package com.smartdatasolutions.test.impl;
 
-import com.smartdatasolutions.test.Member;
-import com.smartdatasolutions.test.MemberImporter;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.List;
+
+import com.smartdatasolutions.test.Member;
+import com.smartdatasolutions.test.MemberImporter;
 
 public class MemberImporterImpl implements MemberImporter {
 
@@ -16,18 +17,43 @@ public class MemberImporterImpl implements MemberImporter {
 		/*
 		 * Implement the missing logic
 		 */
+		
+		List<Member> members = new ArrayList<>();
 
 		try (BufferedReader br = new BufferedReader( new FileReader( inputFile ) )) {
 			String line = br.readLine( );
 
-			while ( line != null ) {
+			while ( line  != null ) {
+				
+				Member member = getMember(line);
+				
+				if(member != null) {
+					members.add(member);
+				}
 				line = br.readLine( );
 
 			}
 		}
 
-		return null;
+		return members;
 	}
+
+	private Member getMember(String line) {
+		
+		Member member = new Member();
+		
+		member.setId(line.substring(0, 12));
+		member.setLastName(line.substring(12, 37));
+		member.setFirstName(line.substring(37, 62));
+		member.setAddress(line.substring(62, 92));
+		member.setCity(line.substring(92, 112));
+		member.setState(line.substring(112, 116));
+		member.setZip(line.substring(116, 121));
+		
+		return member;
+	}
+	
+	
 	
 	
 
